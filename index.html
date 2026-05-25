@@ -3,245 +3,348 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
   <title>Política de Privacidade — audiêncIA Penal BETA</title>
   <style>
-    :root {
-      --ink: #172033;
-      --muted: #516070;
-      --border: #d9e1ec;
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --blue: #163b66;
-      --blue-soft: #e8f0fb;
-      --warn-bg: #fff7df;
-      --warn-border: #ead38d;
-    }
     body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
-    }
-    main {
       max-width: 920px;
       margin: 0 auto;
       padding: 32px 20px 56px;
+      color: #1f2937;
+      background: #ffffff;
     }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 32px;
-      box-shadow: 0 8px 28px rgba(30, 45, 70, 0.08);
+    h1, h2, h3 {
+      line-height: 1.25;
+      color: #111827;
     }
-    h1, h2, h3 { line-height: 1.25; }
     h1 {
-      margin: 0 0 8px;
-      color: var(--blue);
       font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     h2 {
-      margin-top: 34px;
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
-      color: var(--blue);
-      font-size: 1.35rem;
+      margin-top: 2rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e5e7eb;
     }
     h3 {
-      margin-top: 22px;
-      color: #263b56;
-      font-size: 1.05rem;
+      margin-top: 1.2rem;
     }
     .meta {
-      color: var(--muted);
-      margin: 0 0 22px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 18px 0 24px;
     }
     .notice {
-      background: var(--blue-soft);
-      border: 1px solid #bfd3ee;
-      border-radius: 12px;
-      padding: 14px 16px;
-      margin: 18px 0 26px;
+      background: #eef6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 20px 0;
     }
-    .contact {
-      background: #f7f9fc;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 14px 16px;
+    ul {
+      padding-left: 1.4rem;
     }
-    ul { padding-left: 24px; }
-    li { margin: 6px 0; }
-    a { color: #1e5aa8; }
-    .footer-note {
-      margin-top: 30px;
-      color: var(--muted);
-      font-size: 0.95rem;
+    li {
+      margin: 0.35rem 0;
+    }
+    strong {
+      color: #111827;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 0.1rem 0.25rem;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
 <main>
-  <section class="card">
-    <h1>Política de Privacidade — audiêncIA Penal BETA</h1>
-    <p class="meta"><strong>Última atualização:</strong> 26 de abril de 2026<br>
-    <strong>Extensão:</strong> audiêncIA Penal BETA<br>
-    <strong>Finalidade:</strong> apoio consultivo à conferência pré-audiência criminal no PJe/TJPE</p>
+  <h1>Política de Privacidade — audiêncIA Penal BETA</h1>
 
-    <p class="notice">Esta extensão é desenvolvida para uso por magistrados brasileiros no contexto do Processo Judicial Eletrônico do TJPE. O tratamento de dados observa a Lei Geral de Proteção de Dados — Lei nº 13.709/2018 — e a Resolução CNJ nº 615/2025, no que aplicáveis ao uso individual descrito nesta política.</p>
+  <div class="meta">
+    <p><strong>Última atualização:</strong> 25 de maio de 2026</p>
+    <p><strong>Extensão:</strong> audiêncIA Penal BETA</p>
+    <p><strong>Versão abrangida:</strong> 5.8.0.2 e posteriores, enquanto mantidas as funcionalidades aqui descritas</p>
+    <p><strong>Finalidade:</strong> apoio consultivo à conferência pré-audiência criminal no PJe/TJPE</p>
+    <p><strong>Contato:</strong> extensao.audiencia.penal@gmail.com</p>
+  </div>
 
-    <h2>1. Escopo desta política</h2>
-    <p>Esta Política de Privacidade descreve como a extensão <strong>audiêncIA Penal BETA</strong> acessa, utiliza, armazena e, em hipóteses opcionais, transmite dados durante seu uso.</p>
-    <p>A extensão foi desenvolvida para auxiliar o magistrado na conferência pré-audiência criminal no PJe, organizando informações relevantes do processo eletrônico, indicando fontes localizadas, grau de confiança da leitura e pontos que merecem conferência antes da abertura do ato.</p>
-    <p>A extensão é ferramenta consultiva. Ela não substitui a leitura judicial dos autos, não pratica ato processual, não decide questões judiciais e não dispensa a conferência humana pelo magistrado.</p>
+  <div class="notice">
+    <p><strong>Resumo:</strong> a extensão atua no navegador do próprio usuário para auxiliar a conferência pré-audiência criminal em processos do PJe/TJPE. O processamento dos autos é local sempre que possível. A consulta a provedor externo de IA é opcional, desligada por padrão e depende de chave de API informada pelo próprio usuário.</p>
+  </div>
 
-    <h2>2. Finalidade da extensão</h2>
-    <p>A extensão tem como único objetivo auxiliar a conferência pré-audiência criminal, especialmente quanto a:</p>
-    <ul>
-      <li>identificação do processo e do tipo de audiência;</li>
-      <li>leitura de documentos visíveis ou importados dos autos;</li>
-      <li>organização de documentos relevantes;</li>
-      <li>resultado da leitura dos autos;</li>
-      <li>identificação de informações localizadas nos documentos lidos;</li>
-      <li>apoio à verificação de situação prisional, reavaliação da prisão preventiva, pessoas da audiência, intimações e possíveis pontos de atenção;</li>
-      <li>resposta a perguntas do magistrado com indicação de fonte e grau de confiança;</li>
-      <li>consulta opcional a provedor de IA pessoal configurado pelo próprio usuário.</li>
-    </ul>
-    <p>A extensão não utiliza dados para publicidade, perfilamento, venda, análise comercial, determinação de crédito, empréstimos ou qualquer finalidade estranha à conferência pré-audiência criminal.</p>
+  <h2>1. Escopo desta política</h2>
 
-    <h2>3. Dados que a extensão acessa</h2>
-    <p>A extensão acessa diferentes categorias de dados, todas processadas localmente, salvo as exceções expressamente descritas nesta política.</p>
+  <p>Esta Política de Privacidade descreve como a extensão audiêncIA Penal BETA acessa, utiliza, armazena e, em hipóteses opcionais, transmite dados durante seu uso.</p>
 
-    <h3>a) Conteúdo da aba ativa do PJe</h3>
-    <p>Quando o usuário abre a extensão em uma aba do PJe/TJPE, ela pode acessar o conteúdo visível ou tecnicamente disponível dessa aba, incluindo:</p>
-    <ul>
-      <li>número do processo;</li>
-      <li>classe, assunto ou dados processuais visíveis;</li>
-      <li>movimentações;</li>
-      <li>nomes ou referências de partes e pessoas envolvidas;</li>
-      <li>documentos exibidos no visualizador;</li>
-      <li>IDs, páginas, datas e títulos de documentos;</li>
-      <li>indicações de sigilo;</li>
-      <li>elementos necessários para identificar documentos candidatos à leitura.</li>
-    </ul>
-    <p>Esse acesso ocorre para que a extensão consiga organizar a conferência pré-audiência a partir do processo efetivamente aberto pelo usuário.</p>
+  <p>A extensão é desenvolvida para uso por magistrados brasileiros no contexto do Processo Judicial Eletrônico do TJPE. O tratamento de dados observa a Lei Geral de Proteção de Dados — Lei nº 13.709/2018 — e a Resolução CNJ nº 615/2025, no que aplicáveis ao uso individual descrito nesta política.</p>
 
-    <h3>b) Requisições do PJe/TJPE durante a navegação ativa</h3>
-    <p>A extensão também pode observar requisições HTTP do próprio PJe/TJPE durante a navegação ativa, exclusivamente para identificar documentos PDF candidatos à leitura. Os metadados dessas requisições — como URL, cabeçalhos, corpo da requisição quando necessário para reconstituir o acesso, cabeçalhos de resposta e identificador da aba — ficam apenas na memória da extensão durante a sessão e não são enviados a servidores externos.</p>
-    <p>Essa observação é usada para reconhecer arquivos do próprio PJe que podem ser lidos localmente pela extensão.</p>
+  <p>A extensão é ferramenta consultiva. Ela não substitui a leitura judicial dos autos, não pratica ato processual, não decide questões judiciais e não dispensa a conferência humana pelo magistrado.</p>
 
-    <h3>c) Arquivo dos autos selecionado pelo usuário</h3>
-    <p>Quando o usuário seleciona arquivo baixado do PJe, a extensão pode processar localmente esse arquivo, incluindo PDF, ZIP, TXT, HTML, PNG, JPG ou JPEG.</p>
-    <p>Esse processamento é feito para formar índice local dos autos, identificar documentos, páginas, textos lidos, documentos lidos parcialmente e documentos não lidos com segurança. O arquivo dos autos selecionado pelo usuário não é enviado automaticamente a servidor externo.</p>
+  <h2>2. Finalidade da extensão</h2>
 
-    <h3>d) Texto extraído e resultado da leitura</h3>
-    <p>A extensão pode gerar localmente texto extraído dos documentos, resultado de OCR, classificação de documentos relevantes, resultado da leitura por documento, identificação de documentos lidos, lidos parcialmente e não lidos com segurança, diagnóstico local da leitura, informações localizadas com indicação de fonte e respostas consultivas para o magistrado.</p>
+  <p>A extensão tem como objetivo único auxiliar a conferência pré-audiência criminal, especialmente quanto a:</p>
 
-    <h3>e) Documentos digitalizados e OCR</h3>
-    <p>A extensão pode usar OCR para tentar ler documentos digitalizados. O OCR é executado localmente na extensão, quando disponível e habilitado, para reconhecer texto em documentos ou imagens vinculadas aos autos. A extensão pode informar ao usuário quando determinado documento foi lido parcialmente ou não foi lido com segurança.</p>
+  <ul>
+    <li>identificação do processo e do tipo de audiência;</li>
+    <li>leitura de documentos visíveis, importados ou selecionados dos autos;</li>
+    <li>organização de documentos relevantes;</li>
+    <li>resultado da leitura dos autos;</li>
+    <li>identificação de informações localizadas nos documentos lidos;</li>
+    <li>apoio à verificação de situação prisional, reavaliação da prisão preventiva, pessoas da audiência, intimações e possíveis pontos de atenção;</li>
+    <li>resposta a perguntas do magistrado com indicação de fonte, limites e grau de confiança;</li>
+    <li>consulta opcional a provedor de IA pessoal configurado pelo próprio usuário.</li>
+  </ul>
 
-    <h3>f) Preferências do usuário</h3>
-    <p>A extensão pode armazenar localmente preferências de uso, como modo de leitura, preferências de interface, ativação ou desativação do Modo IA pessoal, provedor de IA escolhido, modelo configurado e opção de registro local das consultas à IA pessoal.</p>
+  <p>A extensão não utiliza dados para publicidade, perfilamento, venda, análise comercial, determinação de crédito, empréstimos ou qualquer finalidade estranha à conferência pré-audiência criminal.</p>
 
-    <h3>g) Chave de API do Modo IA pessoal</h3>
-    <p>Quando o usuário ativa o Modo IA pessoal, ele pode informar uma chave de API de provedor externo. A chave de API não é salva permanentemente pela extensão. Ela é mantida apenas durante a sessão do navegador, no armazenamento de sessão, e deve ser reinformada quando necessário.</p>
-    <p>O usuário deve utilizar chave restrita, com limites de gasto e escopo adequado, e revogá-la periodicamente no provedor escolhido.</p>
+  <h2>3. Dados que a extensão pode acessar</h2>
 
-    <h3>h) Registro local opcional de consultas à IA pessoal</h3>
-    <p>Se o usuário ativar expressamente o registro local, a extensão poderá guardar metadados das consultas realizadas ao Modo IA pessoal, tais como data e hora, número do processo, pergunta feita, provedor utilizado, modelo utilizado, quantidade de trechos enviados, status da resposta, grau de confiança e indicação sobre existência e validação de fonte.</p>
-    <p>Esse registro local não guarda íntegra dos autos, trechos enviados ao provedor, conteúdo de decisões, depoimentos, documentos sensíveis ou texto integral de peças do processo.</p>
-    <p>O registro pode ser exportado ou apagado pelo próprio usuário.</p>
+  <p>A extensão acessa diferentes categorias de dados, todas vinculadas à sua finalidade única. Como regra, os dados são processados localmente no navegador do usuário, salvo as transmissões externas expressamente descritas nesta política.</p>
 
-    <h2>4. Como os dados são usados</h2>
-    <p>Os dados acessados pela extensão são usados para identificar o processo aberto, ler ou tentar ler documentos dos autos, indicar o que foi lido com segurança, indicar o que foi lido parcialmente, indicar documentos não lidos com segurança, localizar documentos relevantes, responder perguntas do magistrado com indicação de fonte, apoiar a conferência pré-audiência, permitir consulta opcional a IA pessoal e permitir registro local opcional de uso responsável da IA pessoal.</p>
-    <p>A extensão não utiliza os dados para criar perfil do usuário, veicular anúncios, realizar análise comercial ou compartilhar informações com terceiros para finalidades próprias do desenvolvedor.</p>
+  <h3>a) Conteúdo da aba ativa do PJe/TJPE</h3>
 
-    <h2>5. Modo IA pessoal</h2>
-    <p>O Modo IA pessoal é opcional e fica desligado por padrão.</p>
-    <p>Quando ativado, ele permite que o magistrado configure um dos provedores externos de IA suportados pela extensão — atualmente <strong>OpenAI, Anthropic ou Google Gemini</strong> —, informando chave de API obtida diretamente no provedor escolhido, para auxiliar na interpretação dos trechos selecionados dos autos.</p>
-    <p>A extensão não envia automaticamente a íntegra dos autos ao provedor externo. Ela seleciona trechos relacionados à pergunta formulada e envia apenas o conteúdo necessário à consulta.</p>
-    <p>Ao ativar o Modo IA pessoal, o usuário deve estar ciente de que:</p>
-    <ul>
-      <li>trechos selecionados dos autos poderão ser enviados ao provedor configurado;</li>
-      <li>esse envio ocorre fora do ambiente do PJe;</li>
-      <li>o provedor externo tratará os dados de acordo com seus próprios termos, políticas e contrato;</li>
-      <li>o usuário deve utilizar apenas provedor cuja API comercial informe que entradas e saídas não são usadas para treinamento do modelo por padrão;</li>
-      <li>a decisão judicial continua sendo integralmente humana.</li>
-    </ul>
-    <p>A extensão não verifica tecnicamente os termos da API do provedor escolhido. Cabe ao usuário conferir, no provedor, que as configurações de retenção, treinamento, segurança e tratamento de dados atendam às exigências de sigilo profissional do magistrado, à LGPD e à Resolução CNJ nº 615/2025.</p>
-    <p>A extensão procura exigir resposta com fonte, grau de confiança e limites da resposta. Caso a resposta da IA não seja compatível com os documentos enviados ou não indique fonte suficiente, ela poderá ser marcada como não confirmada.</p>
+  <p>Quando o usuário abre a extensão em uma aba do PJe/TJPE, ela pode acessar conteúdo visível ou tecnicamente disponível nessa aba, incluindo:</p>
 
-    <h2>6. Modo de sigilo</h2>
-    <p>Quando a extensão identifica indícios de segredo de justiça no processo aberto, ela sinaliza essa condição ao usuário e adota cautelas adicionais.</p>
-    <p>A leitura local dos autos não é bloqueada pelo modo de sigilo, pois esse processamento ocorre apenas no computador do próprio usuário, sem transmissão externa.</p>
-    <p>A consulta à IA pessoal externa, quando ativada, exige confirmação expressa em processos com indicação de sigilo e envia apenas trechos selecionados, nunca a íntegra dos autos automaticamente.</p>
-    <p>A abertura de fontes oficiais, como legislação e jurisprudência, ocorre apenas por consulta abstrata e sanitizada, sem envio de trechos dos autos pela extensão.</p>
-    <p>A responsabilidade final pela preservação do sigilo permanece com o usuário.</p>
+  <ul>
+    <li>número do processo;</li>
+    <li>classe, assunto ou dados processuais visíveis;</li>
+    <li>movimentações;</li>
+    <li>nomes ou referências de partes, vítimas, testemunhas, advogados, Ministério Público, defesa e demais pessoas envolvidas;</li>
+    <li>documentos exibidos no visualizador;</li>
+    <li>IDs, páginas, datas e títulos de documentos;</li>
+    <li>indicações de sigilo;</li>
+    <li>elementos necessários para identificar documentos candidatos à leitura.</li>
+  </ul>
 
-    <h2>7. Compartilhamento e transferência de dados</h2>
-    <p>A extensão não vende, não aluga e não monetiza dados do usuário.</p>
-    <p>A extensão também não transfere dados do usuário a terceiros para fins próprios do desenvolvedor, publicidade, perfilamento, análise comercial, determinação de crédito ou qualquer finalidade estranha ao propósito único da extensão.</p>
-    <p>As únicas transmissões externas possíveis são:</p>
-    <ul>
-      <li>comunicação técnica com o próprio PJe/TJPE durante a navegação ativa do usuário, necessária ao funcionamento da extensão;</li>
-      <li>abertura de fontes oficiais brasileiras, como legislação no Planalto e jurisprudência no TJPE, com consulta abstrata e sanitizada, sem trechos dos autos;</li>
-      <li>consulta opcional à IA pessoal, quando configurada e acionada pelo próprio usuário, com envio de trechos selecionados ao provedor por ele escolhido.</li>
-    </ul>
-    <p>A extensão não compartilha a íntegra dos autos automaticamente.</p>
+  <p>Esse acesso ocorre para que a extensão consiga organizar a conferência pré-audiência a partir do processo efetivamente aberto pelo usuário.</p>
 
-    <h2>8. Armazenamento e retenção</h2>
-    <p>A extensão pode armazenar localmente, no perfil do navegador, preferências do usuário, resultados temporários de leitura, índice local dos autos, diagnóstico local da leitura e registro local opcional de consultas à IA pessoal.</p>
-    <p>A extensão não mantém servidor próprio para armazenar autos ou consultas.</p>
-    <p>A chave de API do Modo IA pessoal é mantida apenas durante a sessão do navegador e não é salva permanentemente pela extensão.</p>
-    <p>O usuário pode apagar preferências, limpar registros locais e remover a extensão a qualquer momento.</p>
+  <h3>b) Atividade técnica de rede no PJe/TJPE</h3>
 
-    <h2>9. Segurança</h2>
-    <p>A extensão adota medidas para reduzir riscos de exposição indevida de dados, incluindo processamento local dos autos sempre que possível, OCR local, envio apenas de trechos selecionados quando o Modo IA pessoal estiver ativo, confirmação adicional em processos com indicação de sigilo, registro local opcional apenas de metadados, não armazenamento de conteúdo integral dos autos no registro de IA pessoal, indicação de documentos não lidos ou lidos parcialmente e respostas com fonte e grau de confiança.</p>
-    <p>Nenhum sistema é absolutamente isento de riscos. O usuário deve utilizar a extensão em ambiente seguro, proteger seu navegador, evitar compartilhamento indevido de tela ou arquivos e utilizar chaves de API restritas quando ativar o Modo IA pessoal.</p>
+  <p>A extensão pode observar requisições HTTP do próprio PJe/TJPE durante a navegação ativa do usuário, exclusivamente para identificar e materializar documentos PDF ou ZIP candidatos à leitura local.</p>
 
-    <h2>10. Crianças e adolescentes</h2>
-    <p>A extensão não é destinada ao uso por crianças ou adolescentes.</p>
-    <p>Como ferramenta de apoio à conferência processual por magistrado, ela pode acessar localmente dados de crianças ou adolescentes quando tais dados constarem dos autos judiciais consultados pelo próprio magistrado.</p>
-    <p>Esses dados são tratados apenas para a finalidade de conferência pré-audiência, nos limites descritos nesta política.</p>
+  <p>Essa observação pode envolver metadados técnicos, como URL, método, tipo de conteúdo, nome do arquivo, cabeçalhos técnicos necessários, corpo da requisição quando indispensável para reconstituir o acesso autenticado ao documento, cabeçalhos de resposta e identificador da aba.</p>
 
-    <h2>11. Uso responsável de inteligência artificial</h2>
-    <p>A extensão é ferramenta consultiva e de apoio à organização da informação processual. Ela não substitui a decisão judicial, não pratica ato processual e não dispensa a conferência humana pelo magistrado.</p>
-    <p>Quando o Modo IA pessoal é ativado, a extensão informa que a resposta provém de provedor externo configurado pelo próprio usuário, limita o envio a trechos selecionados e exige fonte ou justificativa para a resposta apresentada.</p>
-    <p>A extensão foi desenhada para favorecer transparência, rastreabilidade, supervisão humana e uso proporcional de inteligência artificial, em linha com a Resolução CNJ nº 615/2025, que disciplina o uso responsável de inteligência artificial no Poder Judiciário, inclusive com atenção a dados sigilosos, segurança da informação, governança e supervisão humana.</p>
+  <p>Esses dados são usados apenas para reconhecer arquivos do próprio PJe/TJPE que podem ser lidos localmente pela extensão. A extensão não coleta histórico geral de navegação, não monitora sites fora dos domínios PJe/TJPE declarados e não envia esses metadados ao desenvolvedor ou a servidor próprio.</p>
 
-    <h2>12. Declaração de uso limitado</h2>
-    <p>O uso de dados pela extensão é limitado às finalidades descritas nesta política e necessárias ao funcionamento da conferência pré-audiência criminal.</p>
-    <p>A extensão não usa dados para publicidade, venda, perfilamento, análise comercial, determinação de crédito ou fins não relacionados ao seu objetivo único.</p>
-    <p>A extensão busca atender ao princípio de uso limitado e às exigências de transparência aplicáveis a extensões que lidam com dados do usuário na Chrome Web Store.</p>
+  <h3>c) Arquivos dos autos selecionados pelo usuário</h3>
 
-    <h2>13. Direitos e controle do usuário</h2>
-    <p>O usuário pode:</p>
-    <ul>
-      <li>desativar o Modo IA pessoal;</li>
-      <li>não informar chave de API;</li>
-      <li>apagar a chave encerrando a sessão do navegador;</li>
-      <li>desativar o registro local de consultas à IA pessoal;</li>
-      <li>exportar ou limpar o registro local;</li>
-      <li>exportar diagnóstico local da leitura por meio da função disponível no painel;</li>
-      <li>não selecionar arquivo dos autos;</li>
-      <li>remover a extensão do navegador;</li>
-      <li>revogar a chave de API diretamente no provedor escolhido;</li>
-      <li>solicitar esclarecimentos sobre o tratamento dos dados pelo desenvolvedor por meio do contato indicado nesta política.</li>
-    </ul>
+  <p>Quando o usuário seleciona arquivo baixado do PJe, a extensão pode processar localmente esse arquivo, incluindo PDF, ZIP, TXT, HTML, PNG, JPG ou JPEG.</p>
 
-    <h2>14. Alterações desta política</h2>
-    <p>Esta política poderá ser atualizada para refletir mudanças na extensão, nas exigências da Chrome Web Store, em normas aplicáveis ou em práticas de segurança.</p>
-    <p>Quando houver alteração relevante, recomenda-se que o usuário consulte a versão mais recente da política antes de continuar utilizando a extensão.</p>
-    <p><small>Esta política aplica-se à versão 5.0 e posteriores da audiêncIA Penal BETA. Versões anteriores podem ter conjuntos diferentes de funcionalidades.</small></p>
+  <p>Esse processamento é feito para formar índice local dos autos, identificar documentos, páginas, textos lidos, documentos lidos parcialmente e documentos não lidos com segurança. O arquivo dos autos selecionado pelo usuário não é enviado automaticamente a servidor externo.</p>
 
-    <h2>15. Contato</h2>
-    <p>Para questões relacionadas a privacidade, proteção de dados ou funcionamento da extensão, entre em contato por:</p>
-    <p class="contact"><strong>E-mail:</strong> extensao.audiencia.penal@gmail.com</p>
-    <p>O desenvolvedor procurará responder às solicitações relacionadas a privacidade e proteção de dados em até 15 dias úteis, quando tecnicamente possível e conforme a natureza da solicitação.</p>
+  <h3>d) Imagem da aba ativa e OCR local</h3>
 
-  </section>
+  <p>A extensão pode capturar imagem da aba ativa do PJe/TJPE quando necessário para OCR local ou para tentar ler conteúdo visível que não esteja disponível como texto estruturado.</p>
+
+  <p>O OCR é executado localmente na extensão, quando disponível e habilitado. A imagem capturada é usada para a finalidade de leitura local e não é enviada ao desenvolvedor ou a servidor próprio.</p>
+
+  <h3>e) Texto extraído e resultado da leitura</h3>
+
+  <p>A extensão pode gerar localmente texto extraído dos documentos, resultado de OCR, classificação de documentos relevantes, diagnóstico da leitura, índice dos autos, informações localizadas com indicação de fonte e respostas consultivas para o magistrado.</p>
+
+  <h3>f) Dados pessoais e dados sensíveis constantes dos autos</h3>
+
+  <p>Como a extensão opera sobre autos judiciais criminais, os documentos processados podem conter dados pessoais e dados sensíveis de partes, vítimas, testemunhas, crianças ou adolescentes, pessoas presas, advogados, membros do Ministério Público, servidores e terceiros.</p>
+
+  <p>Esses dados podem incluir nomes, números de documentos, endereços, telefones, e-mails, referências familiares, dados processuais, informações de saúde, informações financeiras ou outros dados eventualmente presentes nos autos. A extensão não usa esses dados para perfilamento, publicidade, análise comercial, crédito, empréstimo ou finalidade autônoma. Eles são tratados apenas porque podem constar dos documentos judiciais analisados pelo próprio usuário.</p>
+
+  <h3>g) Preferências do usuário</h3>
+
+  <p>A extensão pode armazenar localmente preferências de uso, como modo de leitura, preferências de interface, ativação ou desativação do Modo IA pessoal, provedor de IA escolhido, modelo configurado, limites de trechos enviados, opção de proteção de dados identificáveis e opção de registro local das consultas à IA pessoal.</p>
+
+  <h3>h) Chave de API do Modo IA pessoal</h3>
+
+  <p>Quando o usuário ativa o Modo IA pessoal, ele pode informar uma chave de API de provedor externo. Por padrão, a chave de API é mantida apenas durante a sessão do navegador, no armazenamento de sessão, e deve ser reinformada quando necessário.</p>
+
+  <p>Opcionalmente, se o usuário escolher criar ou atualizar o cofre local, a chave poderá ser armazenada no perfil do navegador em cofre local criptografado com senha definida pelo próprio usuário. A senha do cofre não é salva pela extensão. O usuário pode excluir a chave da sessão ou apagar o cofre local a qualquer momento.</p>
+
+  <p>O usuário deve utilizar chave restrita, com limites de gasto e escopo adequado, e revogá-la periodicamente no provedor escolhido.</p>
+
+  <h3>i) Registro local opcional de consultas à IA pessoal</h3>
+
+  <p>Se o usuário ativar expressamente o registro local, a extensão poderá guardar metadados das consultas realizadas ao Modo IA pessoal, tais como data e hora, número do processo, pergunta feita, provedor utilizado, modelo utilizado, quantidade de trechos enviados, status da resposta, grau de confiança e indicação sobre existência e validação de fonte.</p>
+
+  <p>Esse registro local não guarda a íntegra dos autos, trechos enviados ao provedor, conteúdo de decisões, depoimentos, documentos sensíveis ou texto integral de peças do processo. O registro pode ser exportado ou apagado pelo próprio usuário.</p>
+
+  <h2>4. Como os dados são usados</h2>
+
+  <p>Os dados acessados pela extensão são usados para:</p>
+
+  <ul>
+    <li>identificar o processo aberto;</li>
+    <li>ler ou tentar ler documentos dos autos;</li>
+    <li>indicar o que foi lido com segurança;</li>
+    <li>indicar o que foi lido parcialmente;</li>
+    <li>indicar documentos não lidos com segurança;</li>
+    <li>localizar documentos relevantes;</li>
+    <li>responder perguntas do magistrado com indicação de fonte, limites e grau de confiança;</li>
+    <li>apoiar a conferência pré-audiência;</li>
+    <li>permitir consulta opcional a IA pessoal;</li>
+    <li>permitir registro local opcional de uso responsável da IA pessoal.</li>
+  </ul>
+
+  <p>A extensão não utiliza os dados para criar perfil do usuário, veicular anúncios, treinar modelo próprio do desenvolvedor, realizar análise comercial ou compartilhar informações com terceiros para finalidades próprias do desenvolvedor.</p>
+
+  <h2>5. Modo IA pessoal</h2>
+
+  <p>O Modo IA pessoal é opcional e fica desligado por padrão.</p>
+
+  <p>Quando ativado, ele permite que o usuário configure um dos provedores externos de IA suportados pela extensão — atualmente OpenAI, Anthropic ou Google Gemini — informando chave de API obtida diretamente no provedor escolhido.</p>
+
+  <p>A extensão não envia automaticamente a íntegra dos autos ao provedor externo. Ela seleciona trechos relacionados à pergunta formulada e envia apenas o conteúdo necessário à consulta, conforme os limites configurados.</p>
+
+  <p>Quando a proteção local de dados identificáveis estiver habilitada, a extensão tenta substituir dados identificáveis por marcadores antes do envio ao provedor externo. Essa proteção reduz exposição, mas não é anonimização perfeita e não dispensa conferência humana pelo usuário.</p>
+
+  <p>Ao ativar o Modo IA pessoal, o usuário deve estar ciente de que:</p>
+
+  <ul>
+    <li>trechos selecionados dos autos poderão ser enviados ao provedor configurado;</li>
+    <li>esse envio ocorre fora do ambiente do PJe;</li>
+    <li>o provedor externo tratará os dados de acordo com seus próprios termos, políticas e contrato;</li>
+    <li>o usuário deve utilizar apenas provedor cuja API comercial e configurações contratadas sejam compatíveis com sigilo profissional, LGPD e normas aplicáveis;</li>
+    <li>a decisão judicial continua sendo integralmente humana.</li>
+  </ul>
+
+  <p>A extensão não verifica tecnicamente os termos da API do provedor escolhido. Cabe ao usuário conferir, no provedor, que as configurações de retenção, treinamento, segurança e tratamento de dados atendam às exigências aplicáveis.</p>
+
+  <h2>6. Modo de sigilo</h2>
+
+  <p>Quando a extensão identifica indícios de segredo de justiça no processo aberto, ela sinaliza essa condição ao usuário e adota cautelas adicionais.</p>
+
+  <p>A leitura local dos autos não é bloqueada pelo modo de sigilo, pois esse processamento ocorre no computador do próprio usuário, sem transmissão ao desenvolvedor ou a servidor próprio.</p>
+
+  <p>A consulta à IA pessoal externa, quando ativada, exige confirmação adicional em processos com indicação de sigilo e envia apenas trechos selecionados, nunca a íntegra dos autos automaticamente.</p>
+
+  <p>A abertura de fontes oficiais, como legislação e jurisprudência, ocorre apenas por consulta abstrata ou sanitizada, sem envio deliberado de trechos dos autos pela extensão.</p>
+
+  <p>A responsabilidade final pela preservação do sigilo permanece com o usuário.</p>
+
+  <h2>7. Compartilhamento e transferência de dados</h2>
+
+  <p>A extensão não vende, não aluga e não monetiza dados do usuário.</p>
+
+  <p>A extensão também não transfere dados do usuário a terceiros para fins próprios do desenvolvedor, publicidade, perfilamento, análise comercial, determinação de crédito ou qualquer finalidade estranha ao propósito único da extensão.</p>
+
+  <p>As únicas transmissões externas possíveis são:</p>
+
+  <ul>
+    <li>comunicação técnica com o próprio PJe/TJPE durante a navegação ativa do usuário, necessária ao funcionamento da extensão;</li>
+    <li>abertura de fontes oficiais brasileiras, como legislação e jurisprudência, com consulta abstrata ou sanitizada, sem envio deliberado de trechos dos autos;</li>
+    <li>consulta opcional à IA pessoal, quando configurada e acionada pelo próprio usuário, com envio de trechos selecionados ao provedor externo escolhido pelo usuário, atualmente OpenAI, Anthropic ou Google Gemini.</li>
+  </ul>
+
+  <p>O desenvolvedor não mantém servidor próprio para receber, armazenar ou processar autos, consultas, respostas de IA, chaves de API ou registros de uso da extensão.</p>
+
+  <h2>8. Armazenamento e retenção</h2>
+
+  <p>A extensão pode armazenar localmente, no perfil do navegador, preferências do usuário, resultados temporários de leitura, índice local dos autos, diagnóstico local da leitura, registro local opcional de consultas à IA pessoal e cofre local criptografado opcional da chave de API.</p>
+
+  <p>A chave de API do Modo IA pessoal, quando não salva no cofre local opcional, é mantida apenas durante a sessão do navegador. Quando o cofre local é usado, a chave é armazenada criptografada localmente e depende da senha definida pelo próprio usuário para ser desbloqueada.</p>
+
+  <p>O usuário pode apagar preferências, limpar registros locais, apagar o cofre local, limpar dados do navegador ou remover a extensão a qualquer momento.</p>
+
+  <h2>9. Permissões usadas pela extensão</h2>
+
+  <p>A extensão solicita apenas permissões necessárias às funcionalidades atuais:</p>
+
+  <ul>
+    <li><strong>activeTab:</strong> acessar a aba ativa do PJe/TJPE quando o usuário usa a extensão.</li>
+    <li><strong>scripting:</strong> injetar scripts necessários para ler elementos da página do PJe/TJPE.</li>
+    <li><strong>storage:</strong> salvar preferências locais, diagnóstico de leitura, registro local opcional e cofre local opcional.</li>
+    <li><strong>tabs:</strong> identificar a aba ativa, configurar o painel lateral e apoiar funções ligadas à aba do PJe/TJPE.</li>
+    <li><strong>sidePanel:</strong> exibir a interface principal da extensão no painel lateral do Chrome.</li>
+    <li><strong>webRequest:</strong> observar requisições restritas ao PJe/TJPE para identificar PDFs ou ZIPs dos autos candidatos à leitura local.</li>
+    <li><strong>Permissões de host do PJe/TJPE:</strong> permitir funcionamento nos domínios do PJe/TJPE declarados no manifesto.</li>
+    <li><strong>Permissões de host de provedores de IA:</strong> permitir consulta opcional, mediante chave própria do usuário, às APIs da OpenAI, Anthropic ou Google Gemini.</li>
+  </ul>
+
+  <h2>10. Segurança</h2>
+
+  <p>A extensão adota medidas para reduzir riscos de exposição indevida de dados, incluindo:</p>
+
+  <ul>
+    <li>processamento local dos autos sempre que possível;</li>
+    <li>OCR local;</li>
+    <li>restrição de funcionamento aos domínios PJe/TJPE declarados;</li>
+    <li>consulta externa à IA pessoal apenas quando o usuário ativa e configura essa funcionalidade;</li>
+    <li>envio apenas de trechos selecionados quando o Modo IA pessoal estiver ativo;</li>
+    <li>proteção local opcional de dados identificáveis antes do envio à IA pessoal;</li>
+    <li>confirmação adicional em processos com indicação de sigilo;</li>
+    <li>registro local opcional apenas de metadados;</li>
+    <li>não armazenamento de conteúdo integral dos autos no registro de IA pessoal;</li>
+    <li>cofre local criptografado opcional para chave de API;</li>
+    <li>bibliotecas de OCR empacotadas na própria extensão, sem carregamento deliberado de código remoto.</li>
+  </ul>
+
+  <p>Nenhum sistema é absolutamente isento de riscos. O usuário deve utilizar a extensão em ambiente seguro, proteger seu navegador, evitar compartilhamento indevido de tela ou arquivos, conferir o conteúdo antes de qualquer envio externo e utilizar chaves de API restritas quando ativar o Modo IA pessoal.</p>
+
+  <h2>11. Crianças e adolescentes</h2>
+
+  <p>A extensão não é destinada ao uso por crianças ou adolescentes.</p>
+
+  <p>Como ferramenta de apoio à conferência processual por magistrado, ela pode acessar localmente dados de crianças ou adolescentes quando tais dados constarem dos autos judiciais consultados pelo próprio usuário.</p>
+
+  <p>Esses dados são tratados apenas para a finalidade de conferência pré-audiência, nos limites descritos nesta política.</p>
+
+  <h2>12. Uso responsável de inteligência artificial</h2>
+
+  <p>A extensão é ferramenta consultiva e de apoio à organização da informação processual. Ela não substitui a decisão judicial, não pratica ato processual e não dispensa a conferência humana pelo magistrado.</p>
+
+  <p>Quando o Modo IA pessoal é ativado, a extensão informa que a resposta provém de provedor externo configurado pelo próprio usuário, limita o envio a trechos selecionados e exige fonte, limites ou justificativa para a resposta apresentada.</p>
+
+  <p>A extensão foi desenhada para favorecer transparência, rastreabilidade, supervisão humana e uso proporcional de inteligência artificial, em linha com normas aplicáveis ao uso responsável de IA no Poder Judiciário.</p>
+
+  <h2>13. Declaração de uso limitado</h2>
+
+  <p>A extensão usa dados apenas para fornecer ou melhorar seu propósito único: apoio consultivo à conferência pré-audiência criminal no PJe/TJPE.</p>
+
+  <p>O uso de informações recebidas das APIs do Chrome/Google aderirá à Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Uso Limitado.</p>
+
+  <p>Para clareza perante a Chrome Web Store: <strong>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</strong></p>
+
+  <p>A extensão não usa nem transfere dados para anúncios personalizados, retargeting, venda, intermediação de dados, perfilamento, análise comercial, determinação de crédito ou empréstimos.</p>
+
+  <p>O desenvolvedor não acessa nem permite que humanos leiam dados processuais do usuário, pois a extensão não envia autos ou consultas a servidor próprio do desenvolvedor. Se o usuário encaminhar voluntariamente informações específicas para suporte, essas informações serão usadas apenas para responder ao suporte solicitado, ressalvadas obrigações legais ou de segurança.</p>
+
+  <h2>14. Direitos e controle do usuário</h2>
+
+  <p>O usuário pode:</p>
+
+  <ul>
+    <li>desativar o Modo IA pessoal;</li>
+    <li>não informar chave de API;</li>
+    <li>apagar a chave da sessão;</li>
+    <li>não criar cofre local;</li>
+    <li>apagar o cofre local;</li>
+    <li>revogar a chave de API diretamente no provedor escolhido;</li>
+    <li>ativar ou desativar a proteção local de dados identificáveis, quando disponível;</li>
+    <li>desativar o registro local de consultas à IA pessoal;</li>
+    <li>exportar ou limpar o registro local;</li>
+    <li>exportar diagnóstico local da leitura por meio da função disponível no painel;</li>
+    <li>não selecionar arquivo dos autos;</li>
+    <li>remover a extensão do navegador;</li>
+    <li>solicitar esclarecimentos sobre o tratamento dos dados pelo contato indicado nesta política.</li>
+  </ul>
+
+  <h2>15. Alterações desta política</h2>
+
+  <p>Esta política poderá ser atualizada para refletir mudanças na extensão, nas exigências da Chrome Web Store, em normas aplicáveis ou em práticas de segurança.</p>
+
+  <p>Quando houver alteração relevante, recomenda-se que o usuário consulte a versão mais recente da política antes de continuar utilizando a extensão.</p>
+
+  <p>Esta política aplica-se à versão 5.8.0.2 e posteriores da audiêncIA Penal BETA, enquanto mantidas as funcionalidades aqui descritas. Versões anteriores podem ter conjuntos diferentes de funcionalidades.</p>
+
+  <h2>16. Contato</h2>
+
+  <p>Para questões relacionadas a privacidade, proteção de dados ou funcionamento da extensão, entre em contato por:</p>
+
+  <p><strong>E-mail:</strong> extensao.audiencia.penal@gmail.com</p>
+
+  <p>O desenvolvedor procurará responder às solicitações relacionadas a privacidade e proteção de dados em até 15 dias úteis, quando tecnicamente possível e conforme a natureza da solicitação.</p>
 </main>
 </body>
 </html>

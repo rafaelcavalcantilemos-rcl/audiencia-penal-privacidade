@@ -1,60 +1,165 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Política de Privacidade - audiencIA Penal</title>
-<style>
-:root{color-scheme:light;--azul:#1f3864;--texto:#18243a;--fraco:#5b6780;--linha:#dfe5ef;--fundo:#f6f8fc}
-*{box-sizing:border-box}body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:900px;margin:36px auto;padding:34px;background:#fff;border:1px solid var(--linha);border-radius:16px;box-shadow:0 12px 40px rgba(31,56,100,.08)}
-h1,h2{color:var(--azul);line-height:1.25}h1{font-size:2rem;margin-top:0}h2{font-size:1.2rem;margin-top:2rem}code{background:#eef2f8;padding:.1rem .35rem;border-radius:4px}a{color:var(--azul)}.meta{color:var(--fraco)}.box{border-left:4px solid var(--azul);background:#f3f6fb;padding:14px 18px;border-radius:8px}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade - audiencIA Penal BETA</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --azul: #1f3864;
+      --texto: #1f2937;
+      --muted: #4b5563;
+      --linha: #d8dee9;
+      --fundo: #f6f8fb;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      background: var(--fundo);
+      color: var(--texto);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--linha);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(31, 41, 55, 0.08);
+    }
+
+    h1, h2 {
+      color: var(--azul);
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      border-top: 1px solid var(--linha);
+      padding-top: 1.25rem;
+    }
+
+    p {
+      margin: 0.75rem 0;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .notice {
+      background: #eef4ff;
+      border: 1px solid #c9daf8;
+      border-left: 5px solid var(--azul);
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+
+    a {
+      color: var(--azul);
+    }
+  </style>
 </head>
-<body><main>
-<h1>Política de Privacidade da audiencIA Penal</h1>
-<p class="meta">Última atualização: 18 de junho de 2026.</p>
-<p class="box"><strong>Resumo:</strong> a audiencIA Penal processa localmente autos escolhidos pelo usuário. O PDF ou ZIP original e o mapa de reversão permanecem no computador. A consulta a IA externa é opcional, depende de ação expressa e usa apenas trechos previamente protegidos.</p>
+<body>
+<main>
+  <h1>Política de Privacidade da audiencIA Penal BETA</h1>
 
-<h2>1. Responsável e finalidade</h2>
-<p>A audiencIA Penal é uma ferramenta de apoio à conferência pré-audiência criminal. Seu responsável pelo item na Chrome Web Store é Rafael Cavalcanti Lemos. A ferramenta organiza informações processuais, aplica proteção local de dados e produz relatórios auxiliares sujeitos à revisão humana. Ela não pratica atos processuais, não decide e não substitui a leitura dos autos pelo magistrado.</p>
+  <p class="meta">Última atualização: 18 de junho de 2026.</p>
 
-<h2>2. Dados tratados</h2>
-<p>A ferramenta trata apenas dados necessários às funcionalidades solicitadas pelo usuário:</p>
-<ul>
-<li><strong>Arquivos escolhidos pelo usuário:</strong> PDF ou ZIP de autos e o texto extraído desses documentos. Conforme o processo, esse conteúdo pode conter nomes, documentos, endereços, informações financeiras, informações de saúde, comunicações e outros dados pessoais ou sensíveis.</li>
-<li><strong>Preferências locais:</strong> configurações de proteção, provedor e modelo, endereço do companion local e marcadores técnicos de sessão.</li>
-<li><strong>Chave de provedor de IA:</strong> quando informada, é tratada apenas em memória para a consulta solicitada. A extensão não a grava no armazenamento do Chrome.</li>
-<li><strong>Relatórios e metadados locais:</strong> cobertura documental, contagens de dados protegidos, estado do processamento, registro do envio protegido e resultados auxiliares.</li>
-</ul>
-<p>A extensão não monitora histórico de navegação, páginas visitadas, posição do mouse, cliques gerais, localização do dispositivo ou atividade do usuário fora de sua própria interface.</p>
+  <div class="notice">
+    <p>A audiencIA Penal BETA é uma extensão de apoio à conferência pré-audiência criminal. Ela processa autos escolhidos pelo usuário, protege dados sensíveis localmente e apresenta relatórios auxiliares para revisão humana. A ferramenta não substitui a decisão judicial, não pratica ato processual e não realiza conclusão decisória vinculante.</p>
+  </div>
 
-<h2>3. Processamento local</h2>
-<p>O companion instalado no computador realiza leitura, OCR, identificação de dados, pseudonimização, varredura anti-vazamento e geração de relatórios. O PDF ou ZIP original e o arquivo que permite reverter os pseudônimos permanecem no equipamento do usuário. O desenvolvedor não recebe cópia dos autos nem mantém servidor próprio para armazená-los.</p>
+  <h2>1. Responsável e finalidade</h2>
+  <p>O responsável pelo item da audiencIA Penal BETA na Chrome Web Store é Rafael Cavalcanti Lemos.</p>
 
-<h2>4. Uso opcional de IA externa</h2>
-<p>Somente quando o usuário aciona expressamente a análise por IA, o companion prepara trechos relevantes, aplica pseudonimização e realiza uma verificação final de privacidade. O provedor e o modelo são escolhidos pelo usuário. O PDF original, o ZIP original, caminhos locais e o mapa de reversão não são enviados.</p>
-<p>A chave e os trechos protegidos são transmitidos ao provedor escolhido por conexão segura. Quando a API oferece essa opção, a solicitação pede que o conteúdo não seja armazenado para treinamento ou uso posterior; ainda assim, as regras de retenção e tratamento do provedor escolhido também se aplicam e devem ser verificadas pelo usuário.</p>
+  <p>A audiencIA Penal BETA tem por finalidade auxiliar magistrados na preparação de audiências criminais, especialmente pela leitura local de autos em PDF ou ZIP, organização de informações relevantes, geração de sínteses, identificação de pendências e riscos processuais, indicação de fontes e produção de relatórios de apoio à revisão humana.</p>
 
-<h2>5. Compartilhamento e usos proibidos</h2>
-<p>Não há venda de dados, publicidade comportamental, criação de perfis comerciais, avaliação de crédito ou uso para finalidade alheia à conferência pré-audiência. A única transferência externa prevista é aquela necessária à consulta de IA solicitada pelo próprio usuário, para o provedor que ele escolheu.</p>
-<p>O responsável pela extensão não permite acesso humano aos autos ou às respostas, salvo se o próprio usuário fornecer voluntariamente material específico para suporte técnico ou se houver obrigação legal.</p>
+  <p>A extensão é voltada ao uso no contexto de conferência pré-audiência. O usuário seleciona os autos que deseja processar. O processamento local é realizado por um companion instalado no próprio computador, que executa leitura, OCR quando necessário, pseudonimização, varredura de privacidade e geração de relatórios.</p>
 
-<h2>6. Armazenamento e exclusão</h2>
-<ul>
-<li>Preferências da extensão permanecem no armazenamento local do Chrome até serem restauradas ou até a extensão ser removida.</li>
-<li>Jobs, relatórios e arquivos auxiliares permanecem na pasta local da audiencIA até serem apagados pelo usuário.</li>
-<li>A chave digitada para a sessão não é salva pela extensão.</li>
-<li>O usuário pode iniciar um novo caso, restaurar preferências, remover a extensão e excluir a pasta local de trabalho para apagar os dados sob seu controle.</li>
-</ul>
+  <h2>2. Dados tratados</h2>
+  <p>Dependendo dos autos selecionados pelo usuário, a ferramenta pode tratar localmente informações contidas no processo, incluindo textos processuais, nomes, documentos, endereços, telefones, e-mails, dados fiscais, dados patrimoniais, informações financeiras e de pagamento, informações de saúde, comunicações, dados de partes, testemunhas, advogados, membros do Ministério Público, magistrados, servidores, números processuais e demais informações constantes dos documentos fornecidos pelo próprio usuário. Conforme o processo, parte desse conteúdo pode constituir dado pessoal sensível na forma da Lei nº 13.709/2018.</p>
 
-<h2>7. Segurança</h2>
-<p>A comunicação entre a extensão e o companion usa Native Messaging e, como contingência, conexão restrita a <code>127.0.0.1</code> ou <code>localhost</code>. Consultas externas usam HTTPS. A ferramenta minimiza o material enviado, mantém o original local e bloqueia o envio quando a varredura final detecta resíduo sensível não resolvido.</p>
+  <p>A extensão também pode tratar dados técnicos necessários ao funcionamento, tais como preferências de configuração, modelo escolhido, provedor escolhido, estado de sessão, relatórios locais, logs técnicos e marcadores internos de processamento.</p>
 
-<h2>8. Uso limitado de dados da Chrome Web Store</h2>
-<p>O uso e a transferência dos dados obtidos pela extensão se limitam ao único propósito descrito nesta política e na página da Chrome Web Store. Os dados não são usados para publicidade, venda, crédito ou finalidades estranhas à funcionalidade apresentada ao usuário.</p>
-<p>O uso das informações recebidas por meio das APIs do Google observará a Política de Dados do Usuário da Chrome Web Store, inclusive os requisitos de Uso Limitado.</p>
+  <p>A audiencIA Penal BETA não coleta dados de localização, não monitora histórico geral de navegação, não registra cliques fora da sua própria interface, não acompanha atividade do usuário em outros sites e não utiliza os dados para publicidade, venda, perfilização comercial, crédito ou finalidade estranha ao funcionamento declarado da ferramenta.</p>
 
-<h2>9. Alterações e contato</h2>
-<p>Esta política poderá ser atualizada para refletir mudanças funcionais ou regulatórias. A data da versão vigente aparecerá no início da página. Dúvidas e solicitações podem ser encaminhadas pelo canal de suporte indicado na página da audiencIA Penal na Chrome Web Store.</p>
-</main></body></html>
+  <h2>3. Processamento local e companion</h2>
+  <p>A extensão funciona em conjunto com um companion local instalado no computador do usuário. Esse companion realiza o processamento dos autos no próprio equipamento, incluindo leitura dos arquivos, OCR, organização do corpus, pseudonimização, varredura anti-vazamento e geração de relatórios.</p>
+
+  <p>O PDF ou ZIP original dos autos permanece no computador do usuário. O mapa de reversão, usado para reidentificação local dos dados pseudonimizados, também permanece no equipamento. A extensão não mantém servidor próprio para receber autos, documentos, mapas de reversão ou consultas.</p>
+
+  <p>A comunicação entre a extensão e o companion ocorre por Native Messaging e, como contingência, por conexão HTTP restrita ao próprio computador, em 127.0.0.1 ou localhost, autenticada por token de sessão. Essa conexão é de loopback, não é acessível pela internet e não permite que a extensão leia páginas externas, histórico de navegação ou conteúdo de outros sites.</p>
+
+  <h2>4. Uso opcional de IA externa</h2>
+  <p>Somente quando o usuário aciona expressamente a análise por IA, o companion local prepara trechos relevantes, aplica pseudonimização e realiza uma verificação final de privacidade. Quando essa verificação final detecta resíduo sensível não resolvido, o envio externo é bloqueado e a consulta não prossegue. O provedor e o modelo são escolhidos pelo usuário. O PDF original, o ZIP original, caminhos locais e o mapa de reversão não são enviados.</p>
+
+  <p>Quando esse modo é acionado, a extensão entrega ao companion local, instalado no próprio computador, a chave informada para aquela sessão e os trechos protegidos necessários à consulta. O companion local transmite esses dados ao provedor escolhido por conexão HTTPS. Essa comunicação externa ocorre apenas por ação expressa do usuário e apenas para executar a consulta solicitada.</p>
+
+  <p>A chave de API é tratada apenas para a execução da consulta solicitada e não é salva pela extensão no armazenamento do Chrome. Quando a API oferece essa opção, a solicitação pede que o conteúdo não seja armazenado para treinamento ou uso posterior; ainda assim, as regras de retenção e tratamento do provedor escolhido também se aplicam e devem ser verificadas pelo usuário.</p>
+
+  <h2>5. O que é armazenado</h2>
+  <p>A extensão pode armazenar localmente preferências de funcionamento, parâmetros de configuração, informações técnicas de sessão, estado de processamento e referências aos relatórios gerados. Esses dados são usados para permitir que o usuário retome o fluxo, abra relatórios locais, verifique o processamento e mantenha suas preferências.</p>
+
+  <p>A extensão e o companion não impõem prazo fixo de retenção. As preferências e os marcadores de sessão permanecem no armazenamento do Chrome até serem restaurados aos padrões ou até a remoção da extensão, e os relatórios e arquivos locais permanecem na pasta de trabalho da audiencIA Penal até que o usuário os apague.</p>
+
+  <p>O armazenamento do Chrome não guarda o PDF ou ZIP dos autos, o conteúdo integral do processo, o mapa de reversão, caminhos locais brutos, arquivos originais ou a chave de API informada para a sessão.</p>
+
+  <p>Os relatórios gerados pelo companion permanecem no computador do usuário. Eles podem incluir relatório de proteção, comprovante dos autos analisados, registro do envio protegido à IA, respostas de audiência e análise auxiliar, conforme o fluxo acionado.</p>
+
+  <h2>6. Exclusão e controle pelo usuário</h2>
+  <p>O usuário controla os arquivos locais que seleciona e os relatórios gerados no próprio computador. Os autos originais permanecem onde o usuário os salvou. Relatórios, caches, logs e resultados locais podem ser removidos pelo próprio usuário mediante exclusão dos arquivos na pasta local da audiencIA Penal ou por comandos de limpeza disponibilizados no pacote local, quando presentes.</p>
+
+  <p>O usuário também pode remover a extensão no Chrome e desinstalar o companion local. A remoção da extensão apaga os dados armazenados por ela no Chrome, conforme o funcionamento padrão do navegador. Arquivos gerados fora do armazenamento do Chrome, no diretório local do companion, devem ser removidos pelo próprio usuário se desejar apagá-los.</p>
+
+  <h2>7. Compartilhamento de dados</h2>
+  <p>A audiencIA Penal BETA não vende dados, não transfere dados para publicidade e não compartilha autos com servidor próprio do desenvolvedor. O desenvolvedor não recebe cópia dos autos, dos relatórios, do mapa de reversão, da chave de API ou das consultas feitas pelo usuário.</p>
+
+  <p>Não há acesso humano do desenvolvedor aos autos, relatórios, respostas, consultas, chaves ou demais conteúdos processuais tratados pela ferramenta, salvo se o próprio usuário fornecer voluntariamente material específico para suporte técnico ou se houver obrigação legal.</p>
+
+  <p>Quando o usuário opta por usar IA externa, os trechos pseudonimizados necessários à consulta e a chave informada para aquela sessão são enviados pelo companion local ao provedor escolhido pelo próprio usuário, exclusivamente para executar a análise solicitada. Esse envio é opcional e depende de ação expressa do usuário.</p>
+
+  <p>Quando o usuário não aciona IA externa, o processamento permanece local, no próprio computador, ressalvadas comunicações técnicas restritas ao funcionamento da extensão e do companion local.</p>
+
+  <h2>8. Uso limitado de dados da Chrome Web Store</h2>
+  <p>O uso e a transferência dos dados obtidos pela extensão se limitam ao único propósito descrito nesta política e na página da Chrome Web Store. Os dados não são usados para publicidade, venda, crédito ou finalidades estranhas à funcionalidade apresentada ao usuário.</p>
+
+  <p>O uso das informações recebidas por meio das APIs do Google observará a Política de Dados do Usuário da Chrome Web Store, inclusive os requisitos de Uso Limitado.</p>
+
+  <h2>9. Alterações, solicitações e contato</h2>
+  <p>Esta política poderá ser atualizada para refletir mudanças funcionais, técnicas ou regulatórias. A data da versão vigente aparecerá no início da página.</p>
+
+  <p>Dúvidas, solicitações de privacidade, pedidos de esclarecimento ou comunicações relacionadas à audiencIA Penal BETA podem ser encaminhados pelo canal de suporte indicado na página da extensão na Chrome Web Store ou pelo e-mail: <a href="mailto:extensao.audiencia.penal@gmail.com">extensao.audiencia.penal@gmail.com</a>.</p>
+
+  <h2>10. Papel do desenvolvedor e responsabilidade pelo uso</h2>
+  <p>A audiencIA Penal BETA é fornecida como ferramenta local de apoio. Em relação aos autos concretos processados no equipamento do usuário, o desenvolvedor da extensão não recebe cópia, não mantém servidor próprio para armazenar esse conteúdo e não define a finalidade do tratamento no caso concreto.</p>
+
+  <p>A seleção dos autos, a finalidade da análise, a decisão de acionar ou não IA externa e a revisão humana dos resultados permanecem sob responsabilidade do usuário ou do órgão responsável pelo uso da ferramenta. A identificação dos agentes de tratamento aplicáveis a cada uso deve observar o contexto institucional e a Lei nº 13.709/2018.</p>
+
+  <p>Os direitos previstos no art. 18 da Lei nº 13.709/2018 relativos aos dados contidos nos autos concretos são exercidos perante o órgão responsável pelo tratamento desses autos. Pedidos relativos ao funcionamento técnico da própria extensão e aos dados que ela mantém localmente podem ser dirigidos ao responsável indicado nesta política.</p>
+</main>
+</body>
+</html>
